@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D7ADAB;
+}
+
+.logo {
+    max-width: 200px;
+    mix-blend-mode: normal;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0 20px;
+    position: relative;
+}
+
+.home li {
+    justify-content: center;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+    display: inline;
+}
+
+
+/* study thouroughly */
+
+.navbar ul li::after {
+    content: '';
+    /* study thouroughly */
+    height: 2.5px;
+    /* line below the links */
+    width: 0;
+    /*to create the hover effect*/
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /*I think postion of the line*/
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(19, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(IIIT-Dharwad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 10px;
+}
+
+button {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #009688;
+    background: transparent;
+    font-size: 15px;
+    position: relative;
+    color: #D1E878;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}

@@ -1,0 +1,58 @@
+{%extends 'base.html'%}
+{%block content%}
+{% load static%}
+<html>
+<head>
+    <title>
+        <meta charset="utf-8" />
+    </title>
+    {% load static%}
+    <link rel="stylesheet" href='{% static 'log.css'%}'>
+</head>
+
+<body>
+    <header>
+        <center>
+        <h1>Enter details</h1>
+        </center>
+    </header>
+
+    <main>
+        <form action='add' method='post'>
+            {% csrf_token %}
+            <center>
+            <h4>Enter subject code  : <input type='text' name='code'><br><br>
+            Enter subject name : <input type='text' name='name'><br><br>
+            Enter branch : <input type='text' name='branch'><br><br>
+            Enter semester : <input type='text' name='semester'><br><br>
+            Enter credit : <input type='text' name='credit'><br><br>
+            Enter Faculty name : <input type='text' name='faculty'><br><br>
+            Enter Faculty id : <input type='text' name='faculty_id'><br><br>
+            Enter Theory hours : <input type='text' name='theory'><br><br>
+            Enter Tutorial hours : <input type='text' name='tutorial'><br><br>
+            Enter Lab hours : <input type='text' name='lab'><br>
+            </h4>
+            <input type='submit' href='add'>
+        </form>
+        <form action='end' method='post'>
+            {%csrf_token%}
+          <br>
+            <input type='submit' href='end'>
+        </form>
+        <form action='endf' method='post'>
+            {%csrf_token%}
+          <br>
+            <input type='submit' href='endf'>
+        </form>
+    </center>
+    </main>
+    <footer>
+        <center><p><h2>Designed by Karthik Aviansh</h2> </p></center>
+    </footer>
+</body>
+</html>
+{% endblock%}
+
+
+
+

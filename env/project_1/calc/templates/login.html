@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table Automation</title>
+    {% load static%}
+    <link rel="stylesheet" href='{% static 'log.css'%}'>
+</head>
+
+<body>
+    <header>
+        <h1>WELCOME</h1>
+        <img src="https://iiitdwd.ac.in/img/logon.png" height="88" width="250"></header>
+
+    <main>
+        <form id=" login_form " class="form_class " action="login/login-access.php " method="post ">
+            <div class="form_div ">
+                <label>Login:</label>
+                <input class="field_class " name="login_txt " type="email " placeholder="Enter your login id" autofocus>
+                <label>Password:</label>
+                <input id="pass " class="field_class " name="password_txt " type="password" placeholder="Enter your password ">
+                <button class="submit_class " type="submit " form="login_form " onclick="1">Enter</button>
+            </div>
+            <div class="info_div ">
+                <p>return to Home page
+                    <a href="1">Click Here</a>
+                </p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Time Table Automation</p>
+    </footer>
+</body>
+
+</html>
