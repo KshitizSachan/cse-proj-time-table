@@ -1,0 +1,39 @@
+{% load static%}
+{% load static%}
+<html>
+
+<head>
+
+    <title>
+        <meta charset="utf-8" />
+    </title>
+    <link rel="{% static 'log.css'%}">
+</head>
+
+<body>
+    <header>
+        <h1>LOGIN PORTAL</h1>
+    </header>
+
+    <main>
+        <form action='add' method='post'>
+            {% csrf_token %}
+            Enter subject code : <input type='text' name='code'><br>
+            Enter subject name : <input type='text' name='name'><br>
+            Enter branch : <input type='text' name='branch'><br>
+            Enter semester : <input type='text' name='semester'><br>
+            Enter credit : <input type='text' name='credit'><br>
+            Enter Faculty name : <input type='text' name='faculty'><br>
+            Enter Faculty id : <input type='text' name='faculty_id'><br>
+            Enter Theory hours : <input type='text' name='theory'><br>
+            Enter Tutorial hours : <input type='text' name='tutorial'><br>
+            Enter Lab hours : <input type='text' name='lab'><br>
+            <input type='submit'>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">JM_Code&trade;</a></p>
+    </footer>
+</body>
+
+</html>
