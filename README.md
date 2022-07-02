@@ -11,7 +11,7 @@ To find all the objects for database:
   
 To see the working of the website:
   1.Open Terminal in vs code.
-  2.Clone the project using git clone "git code *" in vs code.
+  2.Clone the project using git clone "git code (paste the HTTPS link to clone here)" in vs code.
   3.cd cse-proj-time-table
   4.cd env
   5.python manage.py runserver
