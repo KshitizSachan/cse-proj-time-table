@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
-import travello
-
+import calc
 urlpatterns = [
-    path('',include('travello.urls')),
+    path('',include('calc.urls')),
     path('admin/', admin.site.urls),
 ]
